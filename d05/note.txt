@@ -1,0 +1,1 @@
+all fixed except ex18 and ex19
