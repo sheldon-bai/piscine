@@ -1,0 +1,83 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p16.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jan 27 19:43:33 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170128/xbai
+
+= Git history ==================================================================
+$> git -C /var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user log --pretty='%H - %an, %ad : %s'
+c00edd1e4b8eed32f36687ba1b39cf01ee0ce7ae - Exam 42, Fri Jan 27 19:43:18 2017 -0800 : add do_op
+8f9e48100244161009d278775bf4d28eda9bac59 - Exam 42, Fri Jan 27 19:21:55 2017 -0800 : add print_bits
+db4f1c036feafb9e9eb06792da5cd58bebae3e9a - Exam 42, Fri Jan 27 18:51:46 2017 -0800 : add reverse_bits.c
+adc530615422ef8453e1a2226ab696b19f078d72 - Exam 42, Fri Jan 27 18:37:38 2017 -0800 : add one more ex02
+e68ccc477bdff2dfde5d1dc557ce27841392d669 - Exam 42, Fri Jan 27 18:27:11 2017 -0800 : add ex02
+1e565b477a994830612ed805cfe77b29cae8c86e - Exam 42, Fri Jan 27 18:16:08 2017 -0800 : add ex01
+ea8149274062821ab2b1c516c2b306c88a106d71 - Exam 42, Fri Jan 27 18:09:32 2017 -0800 : add ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1706 Jan 27 19:43 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 do_op
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 ft_strdup
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 ft_strlen
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 print_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 19:43 reverse_bits
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1186 Jan 27 19:43 aff_last_param.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1405 Jan 27 19:43 do_op.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1101 Jan 27 19:43 ft_atoi.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/ft_strdup:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1135 Jan 27 19:43 ft_strdup.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jan 27 19:43 ft_strlen.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1401 Jan 27 19:43 print_bits.c
+
+/var/folders/nx/05d15srn3598pt55h4f8y1bc0000gp/T/tmpHF56KC/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1092 Jan 27 19:43 reverse_bits.c
+ 
+= do_op ========================================================================
+$> gcc -Wextra -Wall -Werror do_op.c -o user_exe 
+do_op.c:29:1: error: control may reach end of non-void function [-Werror,-Wreturn-type]
+}
+^
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================
